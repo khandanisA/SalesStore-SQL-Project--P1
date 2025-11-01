@@ -33,7 +33,7 @@ copy sales_store(transaction_id,
 				 purchase_date,
 				 time_of_purchase,
 				 status)
-from '‪C:\Users\MD DANISH KHAN\OneDrive\Desktop\sales.csv'
+from 'C:\\Users\\MD DANISH KHAN\\OneDrive\\Desktop\\sales.csv'
 delimiter ','
 csv header;
 
@@ -280,3 +280,4 @@ from sales_store_copy
 group by date_part('year',purchase_date),
        date_part('month',purchase_date)
 order by sum(quantity*price) desc;
+
